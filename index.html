@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prac HTML-form</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <section class="left-container">
+      <div class="logo"><img src="/src/assets/odin-lined.png" alt="The Odin Logo">
+      <p class="odin-text">ODIN</p>
+      </div>
+      <div class="content">
+        <p>Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+      </div>
+    </section>
+    <section class="right-container">
+      <article class="text-content">
+        <p><h2>This is not a real online service! You know need something like this in your life to help you realize your deepest dream. Sign up <i>now</i> to get started.</h2></p>
+        <p ><h2>You <i>know</i> you want to.</h2></p>
+      </article>
+      <article>
+        <form>
+          <fieldset>
+            <legend><h2>Let's do this!</h2></legend>
+              <div><label for="fname">FIRST NAME:</label><br>
+              <input type="text" id="fname" name="fname" value="Thor" required><br></div>   
+
+              <div><label for="lname">LAST NAME:</label><br>
+              <input type="text" id="lname" name="lname" value="Odinson" required><br></div>
+
+              <div><label for="email">EMAIL:</label><br>
+              <input type="email" id="email" name="email" required><br></div>
+
+              <div><label for="phone">PHONE NUMBER:</label><br>
+              <input type="tel" id="phone" name="phone" required><br></div>
+
+              <div><label for="pass">PASSWORD:</label><br>
+              <input type="password" id="pass" name="pass" required><br><span>* Passwords do not match</span></div>
+
+              <div><label for="confirm">CONFIRM PASSWORD:</label><span><br>
+              <input type="password" id="confirm" name="confirm" required><br></div>
+        </fieldset>
+        <div class="but">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a></p>
+        </div>
+        </form>
+      </article>
+    </section>
+  </body>
+  <script src="./main.js"></script>
+</html>
